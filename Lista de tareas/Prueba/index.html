@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <div>
+            <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+            <button onclick="agregarTarea()">Agregar</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div id="trashBin">
+            <button onclick="vaciarPapelera()">Vaciar Papelera</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
