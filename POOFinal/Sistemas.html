@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Ingenieria en Sistemas</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+    var botonesFormulario = document.querySelectorAll("#boton-formulario");
+    botonesFormulario.forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            window.location.href = "Formulaio.html";
+        });
+    });
+};
+    </script>
+
+<nav class="menu">
+    <div class="boton-menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i> Menú
+    </div>
+    <ul class="lista-menu" id="lista-menu">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="profile.html">Mi Cuenta</a></li>
+        <li><a href="Buscar.html">Buscar</a></li>
+        <li><a href="MisEventos">Mis Eventos</a></li>
+    </ul>
+</nav>
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
+                <div class="fila">
+                    <div class="col">
+                        <h2>EVENTHUB</h2>
+                        <p>Eventos disponibles / Ingenieria en Sistemas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <h3>Concurso de videojuegos</h3>
+                    <img src="imagen/videojuegos.jpg" alt="Descripción de la imagen" style="width: 200px;">
+                    <p>Divertido torneo de Videojuegos<br/>
+                        Dia: 30 de Abril<br/>
+                        Hora: 1 p.m<br/>
+                        Lugar: Tercera planta</p>
+                        <button id="boton-formulario">Registrarse</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Concurso de Programacion</h3>
+                    <img src="imagen/concurso_progra.jpg" alt="Descripción de la imagen" style="width: 200px;">
+                    <p>Fecha: 30 de Abril<br/>
+                       Hora: 10 a.m <br/>
+                       Lugar: Tercera Planta</p>
+                       <button id="boton-formulario">Registrarse</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Asamblea General</h3>
+                    <img src="imagen/Asamblea.jpg" alt="Descripción de la imagen" style="width: 150px;">
+                    <p>Se llevara acabo una asamblea donde se tocaran diversos temas respecto a la carrera.<br/>
+                        Dia Lunes 8 de Abril.<br/>
+                        Hora: 1 p.m<br/>
+                        Lugar: Tercera planta<br/></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>EVENTHUB - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

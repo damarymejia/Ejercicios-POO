@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="Profile.css">
+
+</head>
+<body>
+    <script>
+        window.onload = function() {
+    var botonesFormulario = document.querySelectorAll("#Salir");
+    botonesFormulario.forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            window.location.href = "Inicio.html";
+        });
+    });
+};
+    </script>
+    <div class="Container">
+    <div class="Perfil">
+    <h1>Perfil de Usuario</h1>
+              <h1>Yolany Mejia</h1>
+              <p>Email: yolanymejia@unah.hn</p>
+              <p>Carrera: Ingenieria en Sistemas</p>
+              <p>Numero de cuenta: 20211920116.</p>
+              
+              <button id="Salir">Salir</button>
+            </div>
+        </div>
+</body>
+</html>

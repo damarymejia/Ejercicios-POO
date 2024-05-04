@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Licenciatura en Comercio Internacional</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+    var botonesFormulario = document.querySelectorAll("#Com");
+    botonesFormulario.forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            window.location.href = "FormularioComercio.html";
+        });
+    });
+};
+    </script>
+
+<nav class="menu">
+    <div class="boton-menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i> Menú
+    </div>
+    <ul class="lista-menu" id="lista-menu">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="profile.html">Mi Cuenta</a></li>
+        <li><a href="Buscar.html">Buscar</a></li>
+        <li><a href="MisEventos">Mis Eventos</a></li>
+        <!-- Agrega más elementos del menú según sea necesario -->
+    </ul>
+</nav>
+
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
+                <div class="fila">
+                    <div class="col">
+                        <h2>EVENTHUB</h2>
+                        <p>Eventos disponibles / Licenciatura en Comercio Internacional</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <h3>Venta</h3>
+                    <img src="imagen/pastelitos.jpeg" alt="Descripción de la imagen" style="width: 130px;">
+                    <p>Deliciosos pastelitos a L.20.<br/>
+                        Fecha: 10 de Abril<br/>
+                        Hora: 9:00 a.m<br/>
+                        Lugar: La fuente<br/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Entrevista</h3>
+                    <img src="imagen/entrevista.jpeg" alt="Descripción de la imagen" style="width: 200px;">
+                    <p>Entérate de los logros de la Carrera de Comercio Interacioal<br/>
+                        en el 2024 y los retos para el 2025, <br/>
+                        en el programa Café Presencia.<br/>
+                        Fecha: 30 de Abril<br/>
+                       Hora: 9 a.m <br/>
+                       Lugar: La fuente</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Sorteo</h3>
+                    <img src="imagen/sorteo.jpeg" alt="Descripción de la imagen" style="width: 150px;">
+                    <p>Gran sorteo de un Samsung S23, precio de boleto L.100.<br/>
+                        Regístrate y reserva tu boleto.<br/>
+                        Dia Lunes 8 de Abril.<br/>
+                        Hora: 1 p.m<br/>
+                        Se realizara en una transmision en vivo en facebook <br/></p>
+                        <button id="Com">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>EVENTHUB - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

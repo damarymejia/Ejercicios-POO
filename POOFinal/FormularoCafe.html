@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <h2>Formulario de Registro</h2>
+        <h3>Administracion de Empresas Cafetaleras</h3>
+        <form id="registroFormCafe" action="procesar_registro.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="Cuenta">Numero de cuenta:</label>
+            <input type="text" id="Cuenta" name="Cuenta" required>
+
+            <label for="Carrera">Carrera:</label>
+            <input type="text" id="Carrera" name="Carrera" required>
+
+            <label for="NomEvento">Nombre del evento:</label>
+            <input type="text" id="NomEvento" name="evento" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyAOozxnsh9wP0hxpvco2ydV_2WGYxGcX-Q",
+            authDomain: "formulario-evento-7f9ea.firebaseapp.com",
+            projectId: "formulario-evento-7f9ea",
+            storageBucket: "formulario-evento-7f9ea.appspot.com",
+            messagingSenderId: "572068489252",
+            appId: "1:572068489252:web:f94b655308916d9a5dd0b1"
+        };
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        document.getElementById("registroFormAgro").addEventListener('submit', function (e) {
+            e.preventDefault();
+            set(ref(db, 'user/Eventos Administracion de Empresas Cafetaleras'), {
+                // Aquí puedes colocar los demás campos que necesites guardar
+                Nombre: document.getElementById("nombre").value,
+                Cuenta: document.getElementById("Cuenta").value,
+                Carrera: document.getElementById("Carrera").value,
+                NombreEvento: document.getElementById("NomEvento").value
+            }).then(() => {
+                console.log('---------  ');
+                alert("¡Tus datos han sido enviados correctamente!");
+                window.location.href = "Inicio.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

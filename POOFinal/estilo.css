@@ -1,0 +1,366 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f6fafc;
+}
+
+/* SECCION I N I C I O */
+.inicio{
+    background:linear-gradient(to right,#275360,#275360 );
+    color: #fff;
+    padding: 4px 0;
+    font-size: 20px;
+    text-align: center;
+    height: 70vh;
+    padding:  0 20px;
+}
+.inicio .contenido{
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+.inicio header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+.inicio .logo{
+    display: flex;
+    align-items: center;
+    color: #00deef;
+    font-size: 25px;
+}
+.inicio .logo i{
+    display: inline-block;
+    margin-right: 20px;
+}
+#inicio header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+#inicio header nav a:hover{
+    border-bottom: 2px solid #ff5b00;
+}
+
+
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.inicio .fila .col{
+    width: 50%;
+    text-align: center;
+}
+.inicio .fila .col h2{
+    margin-bottom:0px;
+    font-size: 70px;
+    text-align: center;
+}
+.inicio .fila .col p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+.inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff5b00;
+    color: #fff;
+    background:linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+.inicio .fila .col button:hover{
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav:hover{
+    background-color: #3e3e3e;
+}
+.sombra{
+    filter:drop-shadow(0em 30px 20px #9bd2f4);
+}
+/* SECCION S E R V I C I O S */
+.servicios{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: -170px;
+    z-index: 10;
+}
+.servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.servicios .fila .col{
+    text-align: center;
+    width: 30%;
+}
+.servicios .fila .col .card{
+    border: 1px solid #8d8d8d;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.servicios .fila .col .card .p{
+    text-align: left;
+}
+
+.servicios .icono{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.servicios .icono .circulo{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.color1{
+    background: linear-gradient(#ff9900, #ff5b00);
+}
+.color2{
+    background: linear-gradient(#038aee, #0039a9);
+}
+.color3{
+    background: linear-gradient(#04e2ee, #017795);
+}
+.servicios h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.servicios .card p{
+    color: #8d8d8d;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: left;
+}
+.servicios .card a{
+    text-decoration: none;
+    color: #008cff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* SECCIÓN F O O T E R */
+
+footer{
+    background-color: #275360;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fila {
+    display: flex; /* Utiliza flexbox para alinear los elementos en una fila */
+}
+
+.col {
+    flex: 1; /* Los elementos ocuparán el mismo espacio */
+    padding: 0 10px; /* Añade algo de espacio entre las columnas */
+}
+
+/* Estilos para el botón del menú */
+.boton-menu {
+    background-color: #275360;
+    color: #fff;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+/* Estilos para la lista del menú */
+ .lista-menu {
+    display: none; /* Oculta la lista por defecto */
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.lista-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.lista-menu li a:hover {
+    background-color: #f0f0f0;
+}
+#boton-formulario{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  #boton-formulario:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #boton-formulario:focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #boton-formulario:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+  #Com{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  #Com:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #Com :focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #Com:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+  #Cafe{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  #Cafe:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #Cafe :focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #Cafe:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+  #Alim{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  #Alim:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #Alim :focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #Alim:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+  #Admon{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  #Admon:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #Admon :focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #Admon:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+  #Agro{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  #Agro:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #Agro :focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #Agro:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+
+  

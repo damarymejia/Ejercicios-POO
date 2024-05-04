@@ -1,0 +1,61 @@
+
+.Perfil{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+   
+}  
+.body{
+    font-family: Arial, sans-serif;
+    margin: 60;
+    padding: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#275360;
+  }
+.p{
+    position: fixed;
+    width: 100%;
+    top: 10;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+#Salir{
+    background-color: #275360; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+    margin: 40%;
+  }
+  
+  #Salir:hover {
+    background-color: #275360; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  #Salir :focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  #Salir:active {
+    background-color: #275360; /* Color de fondo del botón al hacer clic */
+  }
+  .profile p {
+    font-size: 16px;
+    margin-bottom: 40px; /* Espacio entre párrafos */
+  }

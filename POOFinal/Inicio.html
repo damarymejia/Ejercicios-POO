@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Inicio EVENTHUB</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="boton-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i> Menú
+        </div>
+        <ul class="lista-menu" id="lista-menu">
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="profile.html">Mi Cuenta</a></li>
+            <!-- Agrega más elementos del menú según sea necesario -->
+        </ul>
+    </nav>
+
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
+
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Bienvenidos a EVENTHUB</h2>
+                        <p>Estamos aquí para mantenerte al tanto de todos los eventos emocionantes</br>
+                            que están transformando nuestro centro día a día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <h3>Proceso de admision</h3>
+                    <img src="imagen/Pruebas.png" alt="Descripción de la imagen" style="width: 150px;">
+                    <p>Participa en el primer proceso de admision 2024 colaborando con las pruebas PAA y PCCNS.<br/>
+                         Abierto desde el 5 al 16 de abril.<br/>
+                        Entra a: bit.ly/Estudiantes1PAA2024CURC</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>ExpoBecas</h3>
+                    <img src="imagen/expobecas.jpg" alt="Descripción de la imagen" style="width: 200px;">
+                    <p>Preparados para el mas grande evento virtual de becas internacionales dirigidos a la comunidad de la UNAH.<br/>
+                        Fecha: 29 y 30 de abril<br/>
+                        Registrate: https:/expobecas.unah.edu.hn</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Proceso de identificación estudiantil</h3>
+                    <img src="imagen/Identificacion.jpg" alt="Descripción de la imagen" style="width: 200px;">
+                    <p>🤩¡Atención Pumas! excelentes noticias.<br/>
+                        El proceso de identificación estudiantil reingreso se realizará en el CURC<br/>
+                        Fecha: del 8 al 12 de abril<br/>
+                        Lugar: Centro de Emprendimiento</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="col">
+                <h2>Encuentra mas avisos y eventos organizados</br>
+                    por cada carrera del Centro Uiversitario Regional Del Centro.</h2>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    
+                    <h3>Ingenieria en Sistemas</h3>
+                    <img src="imagen/Sistemas.png" alt="Descripción de la imagen" style="width: 200px;">
+                    <a href="Sistemas.html">Ingresar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Ingenieria Agroindustrial</h3>
+                    <img src="imagen/Agroindustria.png" alt="Descripción de la imagen" style="width: 200px;">
+                    <a href="Agroindustria.html">Ingresar</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Administracion y Generacion de Empresas</h3>
+                    <img src="imagen/Administracion.jpeg" alt="Descripción de la imagen" style="width: 200px;">
+                    <a href="Administracion.html">Ingresar</a>
+                </div>
+            </div>
+        </div>
+    <div class="fila">
+        <div class="col">
+            <div class="card">
+                <h3>Licenciatura en Comercio Internacional</h3>
+                <img src="imagen/Comercio.jpeg" alt="Descripción de la imagen" style="width: 200px;">
+                <a href="Comercio.html">Ingresar</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>Administracion de Empresas Cafetaleras</h3>
+                <img src="imagen/cafe.jpeg" alt="Descripción de la imagen" style="width: 200px;">
+                <a href="Cafetalero.html">Ingresar</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>Tecnico en Tecnologia de Alimentos</h3>
+                <img src="imagen/tec alimentos.png" alt="Descripción de la imagen" style="width: 200px;">
+                <a href="Alimentos.html">Ingresar</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>EVENTHUB - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
